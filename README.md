@@ -1,4 +1,4 @@
-📚 Microservices Library Catalog
+# Microservices Library Catalog
 
 CS 361: Software Engineering I
 Author: Danny Caspary
@@ -11,7 +11,8 @@ This project is a command-line library catalog system designed to demonstrate ke
     Microservice B: Allows users to view the catalog by genre.
 
 ZeroMQ is used for communication between the main program and the microservices, demonstrating inter-process communication (IPC) and distributed system design in a local environment.
-💡 Features
+
+## Features
 Main Program (library.py)
 
     User Management
@@ -52,7 +53,7 @@ Microservice B: msb_genre_lookup.py
 
     Returns a neatly formatted string of available titles by genre
 
-🧪 How to Run
+## How to Run
 
     Install dependencies
     Only ZeroMQ and pyzmq are required:
@@ -70,7 +71,7 @@ In a third terminal window:
 
     python library.py
 
-🛠 Technologies Used
+## Technologies Used
 
     Python 3.11+
 
@@ -80,33 +81,33 @@ In a third terminal window:
 
     CLI-based UX
 
-🧱 Possible Improvements
+## Possible Improvements
 
 This project was built with future extensibility in mind. Planned upgrades include:
 
-    🗃 Migrating the catalog and user data to a database (e.g., SQLite or PostgreSQL)
+    Migrating the catalog and user data to a database (e.g., SQLite or PostgreSQL)
 
-    🖥 Building a graphical interface (GUI) using tkinter or a web frontend
+    Building a graphical interface (GUI) using tkinter or a web frontend
 
-    🔄 Enhanced error handling for malformed input or broken connections
+    Enhanced error handling for malformed input or broken connections
 
-    🧪 Unit tests for key logic and microservice communication
+    Unit tests for key logic and microservice communication
 
-📁 Project Structure
+## Project Structure
 
 library/
-├── library.py              # Main CLI-based library app
-├── msa_send_alert.py       # Microservice A (Overdue Alerts)
-├── msb_genre_lookup.py     # Microservice B (Genre Lookup)
-└── README.md               # Project documentation
+ - library.py              # Main CLI-based library app
+ - msa_send_alert.py       # Microservice A (Overdue Alerts)
+ - msb_genre_lookup.py     # Microservice B (Genre Lookup)
+ - README.md               # Project documentation
 
-🔐 Notes
+## Notes
 
     The generate_id() function uses a limited character set for easier typing and debugging.
 
     Microservices send a termination signal "Q" to indicate when the task is complete.
 
-👋 Acknowledgments
+## Acknowledgments
 
     Adapted ZeroMQ examples from "Introduction to ZeroMQ" by Luis Flores.
 
